@@ -16,7 +16,7 @@ This application enforces referential integrity, supports relational queries (JO
 
 ---
 
-Employee-Management-Module/<br>
+employee-management-backend/<br>
 │<br>
 ├── screenshots/<br>
 │   ├── get-all-employees.png<br>
