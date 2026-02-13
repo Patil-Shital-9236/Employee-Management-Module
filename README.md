@@ -17,29 +17,37 @@ This application enforces referential integrity, supports relational queries (JO
 ---
 
 ## Project Structure
+Employee-Management-Module/
+│
+├── screenshots/
+│   ├── get-all-employees.png
+│   ├── employee-with-manager.png
+│   ├── delete-manager.png
+│   └── after-manager-delete.png
+├── README.md
+├── src/<br>
+  │<br>
+  ├── config/<br>
+  │ └── database.js # Database connection configuration<br>
+  │<br>
+  ├── controllers/<br>
+  │ ├── departmentController.js<br>
+  │ └── employeeController.js<br>
+  │<br>
+  ├── middleware/<br>
+  │ └── logger.js # Global request–response logger<br>
+  │<br>
+  ├── models/<br>
+  │ ├── department.js<br>
+  │ ├── employee.js<br>
+  │ └── index.js # Model associations<br>
+  │<br>
+  ├── routes/<br>
+  │ ├── departmentRoutes.js<br>
+  │ └── employeeRoutes.js<br>
+  │<br>
+  ├── app.js # Application entry point<br>
 
-src/<br>
-│<br>
-├── config/<br>
-│ └── database.js # Database connection configuration<br>
-│<br>
-├── controllers/<br>
-│ ├── departmentController.js<br>
-│ └── employeeController.js<br>
-│<br>
-├── middleware/<br>
-│ └── logger.js # Global request–response logger<br>
-│<br>
-├── models/<br>
-│ ├── department.js<br>
-│ ├── employee.js<br>
-│ └── index.js # Model associations<br>
-│<br>
-├── routes/<br>
-│ ├── departmentRoutes.js<br>
-│ └── employeeRoutes.js<br>
-│<br>
-├── app.js # Application entry point<br>
 
 ---
 
