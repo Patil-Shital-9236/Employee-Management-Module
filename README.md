@@ -16,7 +16,6 @@ This application enforces referential integrity, supports relational queries (JO
 
 ---
 
-## Project Structure
 Employee-Management-Module/<br>
 │<br>
 ├── screenshots/<br>
@@ -24,29 +23,35 @@ Employee-Management-Module/<br>
 │   ├── employee-with-manager.png<br>
 │   ├── delete-manager.png<br>
 │   └── after-manager-delete.png<br>
+│<br>
 ├── README.md<br>
+│<br>
 ├── src/<br>
-  │<br>
-  ├── config/<br>
-  │ └── database.js # Database connection configuration<br>
-  │<br>
-  ├── controllers/<br>
-  │ ├── departmentController.js<br>
-  │ └── employeeController.js<br>
-  │<br>
-  ├── middleware/<br>
-  │ └── logger.js # Global request–response logger<br>
-  │<br>
-  ├── models/<br>
-  │ ├── department.js<br>
-  │ ├── employee.js<br>
-  │ └── index.js # Model associations<br>
-  │<br>
-  ├── routes/<br>
-  │ ├── departmentRoutes.js<br>
-  │ └── employeeRoutes.js<br>
-  │<br>
-  ├── app.js # Application entry point<br>
+│   ├── config/<br>
+│   │   └── database.js              # Database connection configuration<br>
+│   │<br>
+│   ├── controllers/<br>
+│   │   ├── departmentController.js  # Department business logic<br>
+│   │   └── employeeController.js    # Employee business logic<br>
+│   │<br>
+│   ├── middleware/<br>
+│   │   └── logger.js                # Global request–response logging middleware<br>
+│   │<br>
+│   ├── models/<br>
+│   │   ├── department.js            # Department model definition<br>
+│   │   ├── employee.js              # Employee model definition<br>
+│   │   └── index.js                 # Model associations & relationships<br>
+│   │<br>
+│   ├── routes/<br>
+│   │   ├── departmentRoutes.js      # Department API routes<br>
+│   │   └── employeeRoutes.js        # Employee API routes<br>
+│   │<br>
+│   └── app.js                       # Express application entry point<br>
+│<br>
+├── package.json<br>
+├── package-lock.json<br>
+└── .env                             # Environment variables (not committed)<br>
+
 
 
 ---
@@ -106,6 +111,23 @@ DB_PASSWORD=your_password<br>
 DB_NAME=employee_db<br>
 DB_DIALECT=mysql<br>
 PORT=3000<br>
+
+---
+
+## API Testing Screenshots (Postman)
+
+### 1️] Get All Employees (Department & Manager Join)
+![Get All Employees](screenshots/get-all-employees.png)
+
+### 2️] Employee with Manager Relationship
+![Employee with Manager](screenshots/employee-with-manager.png)
+
+### 3️] Delete Manager (Business Rule Applied)
+![Delete Manager](screenshots/delete-manager.png)
+
+### 4️] Subordinates Updated After Manager Deletion
+![After Manager Delete](screenshots/after-manager-delete.png)
+
 
 ---
 
