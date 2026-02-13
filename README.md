@@ -17,14 +17,14 @@ This application enforces referential integrity, supports relational queries (JO
 ---
 
 ## Project Structure
-Employee-Management-Module/
-│
-├── screenshots/
-│   ├── get-all-employees.png
-│   ├── employee-with-manager.png
-│   ├── delete-manager.png
-│   └── after-manager-delete.png
-├── README.md
+Employee-Management-Module/<br>
+│<br>
+├── screenshots/<br>
+│   ├── get-all-employees.png<br>
+│   ├── employee-with-manager.png<br>
+│   ├── delete-manager.png<br>
+│   └── after-manager-delete.png<br>
+├── README.md<br>
 ├── src/<br>
   │<br>
   ├── config/<br>
